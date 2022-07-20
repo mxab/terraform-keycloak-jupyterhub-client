@@ -9,7 +9,9 @@ Creates a keycloak client and and user and administor role for jupyterhub.
 
 module "keycloak_jupyterhub" {
 
-  source      = "mxab/keycloak/jupyterhub-client"
+  source  = "mxab/jupyterhub-client/keycloak"
+  version = "0.1.0"
+
   realm_id    = "my-realm"
   client_id   = "jupyterhub" # default
 }
